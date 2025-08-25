@@ -26,7 +26,6 @@ const BusinessSignUpPage = () => {
     }
     if (!formData.contactPerson) newErrors.contactPerson = 'Contact person is required';
     if (!formData.phone) newErrors.phone = 'Phone is required';
-
     return newErrors;
   };
 
@@ -77,6 +76,7 @@ const BusinessSignUpPage = () => {
     );
   }
 
+  // ✅ This is the fix — the main form must be returned
   return (
     <div className="p-6 max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Business Sign-Up</h1>
