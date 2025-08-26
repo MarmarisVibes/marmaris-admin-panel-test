@@ -14,8 +14,6 @@ function App() {
               <Route path="/media-uploads" element={<MediaUploadsPage />} />
               <Route path="/review-reports" element={<ReviewReportsPage />} />
               <Route path="/settings" element={<SettingsPage />} />
-              {/* ✅ Add this route */}
-              <Route path="/business-signup" element={<BusinessSignUpPage />} />
             </Routes>
           </main>
         </div>
